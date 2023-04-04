@@ -8,6 +8,7 @@ module.exports = {
     extend: {
       fontFamily: {
         'roboto': ['Roboto', 'sans-serif'],
+        'noto': ['Noto Sans, sans-serif'],
       }
     },
   },
