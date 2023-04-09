@@ -1,44 +1,17 @@
 <template>
   <div id="trick" class="flex flex-col items-center">
-    <h1 class="text-white text-6xl font-noto font-bold text-center pb-40">Trick Or Treat</h1>
-    <div class="grid gap-14 grid-cols-3 grid-rows-3">
         <div class="card-trick">
-            <img src="../../../assets/tor1-img.svg" alt="">
-            <h2>Candy</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id id consequat, eu faucibus nulla. Ultrices mattis lacus, sed maecenas nascetur.</p>
+            <img :src="img" :alt="alt">
+            <h2>{{title}}</h2>
+            <p>{{text}}</p>
         </div>
-        <div class="card-trick">
-            <img src="../../../assets/tor2-img.svg" alt="">
-            <h2>Ghost</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id id consequat, eu faucibus nulla. Ultrices mattis lacus, sed maecenas nascetur. </p>
-        </div>
-        <div class="card-trick">
-            <img src="../../../assets/tor3-img.svg" alt="">
-            <h2>Grave</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id id consequat, eu faucibus nulla. Ultrices mattis lacus, sed maecenas nascetur. </p>
-        </div>
-        <div class="card-trick">
-            <img src="../../../assets/tor4-img.svg" alt="">
-            <h2>House</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id id consequat, eu faucibus nulla. Ultrices mattis lacus, sed maecenas nascetur.</p>
-        </div>
-        <div class="card-trick">
-            <img src="../../../assets/tor5-img.svg" alt="">
-            <h2>Spider</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id id consequat, eu faucibus nulla. Ultrices mattis lacus, sed maecenas nascetur.</p>
-        </div>
-        <div class="card-trick">
-            <img src="../../../assets/tor-6-img.svg" alt="">
-            <h2>Bone</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id id consequat, eu faucibus nulla. Ultrices mattis lacus, sed maecenas nascetur.</p>
-        </div>
-    </div>
   </div>
 </template>
 
 <script lang="ts">
 export default {
     name: 'trickComponent',
+    props: ['img', 'alt', 'title', 'text'],
 }
 </script>
 
